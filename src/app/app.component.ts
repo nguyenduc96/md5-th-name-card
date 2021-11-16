@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Card} from './card';
+import {ProgressBar} from './progress-bar';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,9 @@ import {Card} from './card';
 })
 export class AppComponent {
   title = 'name-card';
-  card: Card = {
-    cardName:'quan'
-  };
+  progressBar: ProgressBar = {
+    backgroundColor: '#f44336',
+    progressColor: '#00ff00',
+    progress : 0,
+  }
 }

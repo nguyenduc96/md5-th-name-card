@@ -1,0 +1,11 @@
+<h2>Progress Bar</h2>
+<h1 class="count" *ngIf="progressBar.progress < 100">{{progressBar.progress.toFixed(0)}} / 100</h1>
+<div class="progress-bar-container" [style.backgroundColor]="progressBar.backgroundColor">
+
+  <div class="progress" [ngStyle]="{
+  backgroundColor: progressBar.progressColor,
+  width: progressBar.progress + '%'
+  }"></div>
+</div>
+<div class="xx" [style.background-image]="progressBar.backgroundImage">
+</div>
