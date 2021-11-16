@@ -1,0 +1,8 @@
+<div class="btn" *ngFor="let i of numbers">
+  <div *ngIf="i <= vote.voteNumber">
+    <button (click)="setVote(i)" [style.background-color]="vote.backgroundColor" >{{i}}</button>
+  </div>
+  <div *ngIf="i > vote.voteNumber">
+    <button (click)="setVote(i)">{{i}}</button>
+  </div>
+</div>
